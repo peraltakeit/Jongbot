@@ -1,0 +1,11 @@
+{
+  "name": "Jongbot",
+  "version": "1.0.0",
+  "description": "BUUUUANG",
+  "main": "bot.js",
+  "author": "Keit Peralta",
+  "dependencies": {
+    "discord.io": "https://github.com/woor/discord.io/tarball/gateway_v6",
+    "winston": "^2.4.3"
+  }
+}
