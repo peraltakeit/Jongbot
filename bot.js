@@ -30,6 +30,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                     to: channelID,
                     message: 'amaw!'
                 });
+   	    break;
 	    case 'ump':
 		bot.sendMessage({
 		    to: channelID,
