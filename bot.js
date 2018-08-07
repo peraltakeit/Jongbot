@@ -19,7 +19,7 @@ bot.on('ready', function (evt) {
 });
 bot.on('message', function (user, userID, channelID, message, evt) {
     // It will listen for messages that will start with `!`
-    if (message.substring(0, 1) == '!') {
+    if (message.substring(0, 1) == '%') {
         var args = message.substring(1).split(' ');
         var cmd = args[0];
        
@@ -30,13 +30,19 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                     to: channelID,
                     message: 'amaw!'
                 });
-   	    break;
+	    break;
 	    case 'ump':
 		bot.sendMessage({
 		    to: channelID,
 		    message: 'hmp!'
 		});
             break;
+	    case 'game':
+		bot.sendMessage({
+		    to: channelID,
+		    message: '\:poop:'
+		});
+	    break;
 	    default:
 		bot.sendMessage({
 		    to: channelID,
