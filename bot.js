@@ -43,7 +43,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 		    message: 'hmp!'
 		});
             break;
-	    case 'game':
+	    case 'g':
 		bot.sendMessage({
 		    to: channelID,
 		    message: ':poop:'
