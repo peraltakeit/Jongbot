@@ -18,8 +18,8 @@ bot.on('ready', function (evt) {
     logger.info(bot.username + ' - (' + bot.id + ')');
 });
 bot.on('message', function (user, userID, channelID, message, evt) {
-    // It will listen for messages that will start with `!`
-    if (message.substring(0, 1) == '!') {
+    // It will listen for messages that will start with `%`
+    if (message.substring(0, 1) == '%') {
         var args = message.substring(1).split(' ');
         var cmd = args[0];
        
@@ -31,10 +31,22 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                     message: 'amaw!'
                 });
    	    break;
+	    case 'amaw':
+		bot.sendMessage({
+		    to: channelID,
+		    message: 'buang!'
+		});
+            break;
 	    case 'ump':
 		bot.sendMessage({
 		    to: channelID,
 		    message: 'hmp!'
+		});
+            break;
+	    case 'game':
+		bot.sendMessage({
+		    to: channelID,
+		    message: ':poop:'
 		});
             break;
 	    default:
