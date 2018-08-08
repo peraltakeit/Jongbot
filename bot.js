@@ -43,13 +43,18 @@ bot.on('message', function(user, userID, channelID, message, evt) {
 		    message: 'hmp!'
 		});
             break;
-     	    case 'sleepos':
+     	    case 'dukanako':
 		bot.sendMessage({
 		    to: channelID,
-		    message: 'sleep > ster'
-		    message: '\:chazzz:\:chazzz:\:chazzz:\:chazzz:'
+		    message: 'sleep > ster'		    
 		});
             break;
+	    case 'sleepos':
+		bot.sendMessage({
+		    to: channelID,
+		    message: '<:chazzz:476321612430311464>'
+		});
+	    break;
 	    case 'g':
 		bot.sendMessage({
 		    to: channelID,
