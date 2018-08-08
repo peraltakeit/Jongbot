@@ -9,27 +9,28 @@ logger.add(logger.transports.Console, {
 logger.level = 'debug';
 // Initialize Discord Bot
 var bot = new Discord.Client({
-   token: auth.token,
-   autorun: true
+    token: auth.token,
+    autorun: true
 });
-bot.on('ready', function (evt) {
+bot.on('ready', function(evt) {
     logger.info('Connected');
     logger.info('Logged in as: ');
     logger.info(bot.username + ' - (' + bot.id + ')');
 });
-bot.on('message', function (user, userID, channelID, message, evt) {
+bot.on('message', function(user, userID, channelID, message, evt) {
     // It will listen for messages that will start with `%`
     if (message.substring(0, 1) == '%') {
         var args = message.substring(1).split(' ');
         var cmd = args[0];
-       
+
         args = args.splice(1);
-        switch(cmd) {
+        switch (cmd) {
             case 'buang':
                 bot.sendMessage({
                     to: channelID,
                     message: 'amaw!'
                 });
+<<<<<<< HEAD
    	    break;
 	    case 'amaw':
 		bot.sendMessage({
@@ -66,6 +67,44 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 		bot.sendMessage({
 		    to: channelID,
 		    message: 'ayaw pataka suwat ug command dira!'
+=======
+   	                    break;
+            case 'amaw':
+                bot.sendMessage({
+                    to: channelID,
+                    message: 'buang!'
+                });
+                        break;
+            case 'ump':
+                bot.sendMessage({
+                    to: channelID,
+                    message: 'hmp!'
+                });
+                        break;
+            case 'sleepos':
+                bot.sendMessage({
+                    to: channelID,
+                    message: 'sleep > ster'
+                    message: '/:chazzz:/:chazzz:/:chazzz:/:chazzz:'
+                });
+                        break;
+             case 'g':
+                bot.sendMessage({
+                    to: channelID,
+                    message: '/:poop:'
+                });
+                        break;
+            case 'game':
+                bot.sendMessage({
+                    to: channelID,
+                    message: '\:poop:'
+                });
+                        break;
+            default:
+                bot.sendMessage({
+                    to: channelID,
+                    message: 'ayaw pataka suwat ug command dira!'
+>>>>>>> e5c9f447d94bf68568099731df8095081639316f
 		});
          }
      }
