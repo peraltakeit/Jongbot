@@ -56,6 +56,12 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 		    message: '/:poop:'
 		});
             break;
+	    case 'game':
+		bot.sendMessage({
+		    to: channelID,
+		    message: '/:poop:/:poop:'
+		});
+            break;
 	    default:
 		bot.sendMessage({
 		    to: channelID,
