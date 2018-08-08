@@ -30,36 +30,82 @@ bot.on('message', function(user, userID, channelID, message, evt) {
                     to: channelID,
                     message: 'amaw!'
                 });
-                break;
-            case 'ump':
-                bot.sendMessage({
-                    to: channelID,
-                    message: 'hmp!'
-                });
-                break;
-            case 'g':
-                bot.sendMessage({
-                    to: channelID,
-                    message: '\:poop:'
-                });
-                break;
-            case 'game':
-                bot.sendMessage({
-                    to: channelID,
-                    message: '\:poop:'
-                });
-                break;
+<<<<<<< HEAD
+   	    break;
+	    case 'amaw':
+		bot.sendMessage({
+		    to: channelID,
+		    message: 'buang!'
+		});
+            break;
+	    case 'ump':
+		bot.sendMessage({
+		    to: channelID,
+		    message: 'hmp!'
+		});
+            break;
+     	    case 'sleepos':
+		bot.sendMessage({
+		    to: channelID,
+		    message: 'sleep > ster'
+		    message: '/:chazzz:/:chazzz:/:chazzz:/:chazzz:'
+		});
+            break;
+	    case 'g':
+		bot.sendMessage({
+		    to: channelID,
+		    message: '/:poop:'
+		});
+            break;
+	    case 'game':
+		bot.sendMessage({
+		    to: channelID,
+		    message: '/:poop:/:poop:'
+		});
+            break;
+	    default:
+		bot.sendMessage({
+		    to: channelID,
+		    message: 'ayaw pataka suwat ug command dira!'
+=======
+   	                    break;
             case 'amaw':
                 bot.sendMessage({
                     to: channelID,
                     message: 'buang!'
                 });
-                break;
+                        break;
+            case 'ump':
+                bot.sendMessage({
+                    to: channelID,
+                    message: 'hmp!'
+                });
+                        break;
+            case 'sleepos':
+                bot.sendMessage({
+                    to: channelID,
+                    message: 'sleep > ster'
+                    message: '/:chazzz:/:chazzz:/:chazzz:/:chazzz:'
+                });
+                        break;
+             case 'g':
+                bot.sendMessage({
+                    to: channelID,
+                    message: '/:poop:'
+                });
+                        break;
+            case 'game':
+                bot.sendMessage({
+                    to: channelID,
+                    message: '\:poop:'
+                });
+                        break;
             default:
                 bot.sendMessage({
                     to: channelID,
                     message: 'ayaw pataka suwat ug command dira!'
-                });
-        }
-    }
+>>>>>>> e5c9f447d94bf68568099731df8095081639316f
+		});
+         }
+     }
 });
