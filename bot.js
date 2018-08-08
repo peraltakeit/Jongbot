@@ -43,9 +43,10 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 		    message: 'hmp!'
 		});
             break;
-     	    case 'sleep>ster':
+     	    case 'sleepos':
 		bot.sendMessage({
 		    to: channelID,
+		    message: 'sleep > ster'
 		    message: '/:chazzz:/:chazzz:/:chazzz:/:chazzz:'
 		});
             break;
