@@ -49,10 +49,10 @@ bot.on('message', function(user, userID, channelID, message, evt) {
 		    message: 'sleep > ster'		    
 		});
             break;
-	    case 'sleepos':
+	    case 'sleep':
 		bot.sendMessage({
 		    to: channelID,
-		    message: '<:chazzz:476321612430311464>'
+		    message: '<:chazzz:476321612430311464> <:chazzz:476321612430311464> <:chazzz:476321612430311464> <:chazzz:476321612430311464> <:chazzz:476321612430311464>'
 		});
 	    break;
 	    case 'g':
@@ -77,6 +77,12 @@ bot.on('message', function(user, userID, channelID, message, evt) {
 		bot.sendMessage({
 		    to: channelID,
 		    message: 'rest in rip'
+		});
+	    break;
+	    case 'wru':
+		bot.sendMessage({
+		    to: channelID,
+		    message: 'wer na u, d2 na me bestfriend...'
 		});
 	    break;
 	    default:
