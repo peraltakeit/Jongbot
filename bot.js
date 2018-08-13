@@ -28,7 +28,7 @@ bot.on('message', function(user, userID, channelID, message, evt) {
 	    case 'help':
 		bot.sendMessage({
 		    to: channelID,
-		    message: '%help\r\n%buang\r\n%amaw\r\n%ump\r\n%dukanako\r\n%sleep\r\n%g or %game\r\n%emojilist\r\n%hahay\r\n%wru\r\n%tubmirules'
+		    message: 'help\r\n buang\r\n amaw\r\n ump\r\n dukanako\r\n sleep\r\n g or game\r\n emojilist\r\n hahay\r\n wru\r\n tobmirules'
 		});
 	    break;
             case 'buang':
@@ -91,11 +91,10 @@ bot.on('message', function(user, userID, channelID, message, evt) {
 		    message: 'w3r na u, d2 na me b3stfr13nd...'
 		});
 	    break;
-	    case 'tubmirules':
+	    case 'tobmirules':
 		bot.sendMessage({
 		    to: channelID,
-		    message: '"Do not tubmilas others if you don\'t want others to tubmilas you."\r\n'
-		    message: '-Chad Y.'
+		    message: '"Do not tobmilas others if you don\'t want others to tobmilas you."\r\n -Chad Y.'
 		});
 	    break;
 	    default:
