@@ -86,6 +86,14 @@ bot.on('message', function(user, userID, channelID, message, evt) {
 		    message: 'wer na u, d2 na me bestfriend...'
 		});
 	    break;
+	    case 'tubmirules':
+		bot.sendMessage({
+		    to: channelID,
+		    message: '"Do not tubmilas others if you won't want others to tubmilas you."'
+		    message: '  '
+		    message: '-Chad Y.'
+		});
+	    break;
 	    default:
 		bot.sendMessage({
 		    to: channelID,
