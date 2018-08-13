@@ -25,6 +25,12 @@ bot.on('message', function(user, userID, channelID, message, evt) {
 
         args = args.splice(1);
         switch (cmd) {
+	    case 'help':
+		bot.sendMessage({
+		    to: channelID,
+		    message: 'help\r\n buang\r\n amaw\r\n ump\r\n dukanako\r\n sleep\r\n g or game\r\n emojilist\r\n hahay\r\n wru\r\n tobmirules'
+		});
+	    break;
             case 'buang':
                 bot.sendMessage({
                     to: channelID,
@@ -52,7 +58,7 @@ bot.on('message', function(user, userID, channelID, message, evt) {
 	    case 'sleep':
 		bot.sendMessage({
 		    to: channelID,
-		    message: '<:chazzz:476321612430311464> <:chazzz:476321612430311464> <:chazzz:476321612430311464> <:chazzz:476321612430311464> <:chazzz:476321612430311464>'
+		    message: '<:chazzz:476321612430311464><:chazzz:476321612430311464><:chazzz:476321612430311464><:chazzz:476321612430311464><:chazzz:476321612430311464>'
 		});
 	    break;
 	    case 'g':
@@ -70,7 +76,7 @@ bot.on('message', function(user, userID, channelID, message, evt) {
 	    case 'emojilist':
 		bot.sendMessage({
 		    to: channelID,
-		    message: '<:chazzz:476321612430311464><:ster_kit:476596096592904224><:jonglts:476572807631732766><:ster_jr:476593940540424213><:isyot:476575339863343108><:dannilow:476578101246033930><:ster_chad:476295692768509954><:owyh:476597541383962625><:MT:476597541245550593><:kit:476599862553608202><:bleh:476597541861851136><:OT:476599864726388736><:sterfu:477031740851093524><:icelicks:477322049061126170><:jrlicks:477323612177563658>'
+		    message: '<:chazzz:476321612430311464><:ster_kit:476596096592904224><:jonglts:476572807631732766><:ster_jr:476593940540424213><:isyot:476575339863343108>\r\n<:dannilow:476578101246033930><:ster_chad:476295692768509954><:owyh:476597541383962625><:MT:476597541245550593><:kit:476599862553608202>\r\n<:bleh:476597541861851136><:OT:476599864726388736><:sterfu:477031740851093524><:icelicks:477322049061126170><:jrlicks:477323612177563658>'
 		});
             break;
 	    case 'hahay':
@@ -82,7 +88,13 @@ bot.on('message', function(user, userID, channelID, message, evt) {
 	    case 'wru':
 		bot.sendMessage({
 		    to: channelID,
-		    message: 'wer na u, d2 na me bestfriend...'
+		    message: 'w3r na u, d2 na me b3stfr13nd...'
+		});
+	    break;
+	    case 'tobmirules':
+		bot.sendMessage({
+		    to: channelID,
+		    message: '"Do not tobmilas others if you don\'t want others to tobmilas you."\r\n -Chad Y.'
 		});
 	    break;
 	    default:
