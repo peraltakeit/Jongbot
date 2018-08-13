@@ -28,17 +28,7 @@ bot.on('message', function(user, userID, channelID, message, evt) {
 	    case 'help':
 		bot.sendMessage({
 		    to: channelID,
-		    message: '%help'
-		message: '%buang'
-		message: '%amaw'
-		message: '%ump'
-		message: '%dukanako'
-		message: '%sleep'
-		message: '%g or %game'
-		message: '%emojilist'
-		message: '%hahay'
-		message: '%wru'
-		message: '%tubmirules'
+		    message: '%help\r\n%buang\r\n%amaw\r\n%ump\r\n%dukanako\r\n%sleep\r\n%g or %game\r\n%emojilist\r\n%hahay\r\n%wru\r\n%tubmirules'
 		});
 	    break;
             case 'buang':
@@ -86,9 +76,7 @@ bot.on('message', function(user, userID, channelID, message, evt) {
 	    case 'emojilist':
 		bot.sendMessage({
 		    to: channelID,
-		    message: '<:chazzz:476321612430311464><:ster_kit:476596096592904224><:jonglts:476572807631732766><:ster_jr:476593940540424213><:isyot:476575339863343108>'
-		    message: '<:dannilow:476578101246033930><:ster_chad:476295692768509954><:owyh:476597541383962625><:MT:476597541245550593><:kit:476599862553608202>'
-		    message: '<:bleh:476597541861851136><:OT:476599864726388736><:sterfu:477031740851093524><:icelicks:477322049061126170><:jrlicks:477323612177563658>'
+		    message: '<:chazzz:476321612430311464><:ster_kit:476596096592904224><:jonglts:476572807631732766><:ster_jr:476593940540424213><:isyot:476575339863343108>\r\n<:dannilow:476578101246033930><:ster_chad:476295692768509954><:owyh:476597541383962625><:MT:476597541245550593><:kit:476599862553608202>\r\n<:bleh:476597541861851136><:OT:476599864726388736><:sterfu:477031740851093524><:icelicks:477322049061126170><:jrlicks:477323612177563658>'
 		});
             break;
 	    case 'hahay':
@@ -106,8 +94,7 @@ bot.on('message', function(user, userID, channelID, message, evt) {
 	    case 'tubmirules':
 		bot.sendMessage({
 		    to: channelID,
-		    message: '"Do not tubmilas others if you don\'t want others to tubmilas you."'
-			message: ' '
+		    message: '"Do not tubmilas others if you don\'t want others to tubmilas you."\r\n'
 		    message: '-Chad Y.'
 		});
 	    break;
