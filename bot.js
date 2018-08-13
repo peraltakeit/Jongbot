@@ -58,7 +58,7 @@ bot.on('message', function(user, userID, channelID, message, evt) {
 	    case 'sleep':
 		bot.sendMessage({
 		    to: channelID,
-		    message: '<:chazzz:476321612430311464> <:chazzz:476321612430311464> <:chazzz:476321612430311464> <:chazzz:476321612430311464> <:chazzz:476321612430311464>'
+		    message: '<:chazzz:476321612430311464><:chazzz:476321612430311464><:chazzz:476321612430311464><:chazzz:476321612430311464><:chazzz:476321612430311464>'
 		});
 	    break;
 	    case 'g':
