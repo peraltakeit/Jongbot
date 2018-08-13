@@ -25,6 +25,22 @@ bot.on('message', function(user, userID, channelID, message, evt) {
 
         args = args.splice(1);
         switch (cmd) {
+	    case 'help':
+		bot.sendMessage({
+		    to: channelID,
+		    message: '%help\n
+				%buang\n
+				%amaw\n
+				%ump\n
+				%dukanako\n
+				%sleep\n
+				%g or %game\n
+				%emojilist\n
+				%hahay\n
+				%wru\n
+				%tubmirules\n'
+		});
+	    break;
             case 'buang':
                 bot.sendMessage({
                     to: channelID,
@@ -70,8 +86,9 @@ bot.on('message', function(user, userID, channelID, message, evt) {
 	    case 'emojilist':
 		bot.sendMessage({
 		    to: channelID,
-		    message: '<:chazzz:476321612430311464><:ster_kit:476596096592904224><:jonglts:476572807631732766><:ster_jr:476593940540424213><:isyot:476575339863343108><:dannilow:476578101246033930><:ster_chad:476295692768509954><:owyh:476597541383962625><:MT:476597541245550593><:kit:476599862553608202><:bleh:476597541861851136><:OT:476599864726388736>'
-		    message: '<:sterfu:477031740851093524><:icelicks:477322049061126170><:jrlicks:477323612177563658>'
+		    message: '<:chazzz:476321612430311464><:ster_kit:476596096592904224><:jonglts:476572807631732766><:ster_jr:476593940540424213><:isyot:476575339863343108>'
+		    message: '<:dannilow:476578101246033930><:ster_chad:476295692768509954><:owyh:476597541383962625><:MT:476597541245550593><:kit:476599862553608202>'
+		    message: '<:bleh:476597541861851136><:OT:476599864726388736><:sterfu:477031740851093524><:icelicks:477322049061126170><:jrlicks:477323612177563658>'
 		});
             break;
 	    case 'hahay':
@@ -83,14 +100,13 @@ bot.on('message', function(user, userID, channelID, message, evt) {
 	    case 'wru':
 		bot.sendMessage({
 		    to: channelID,
-		    message: 'wer na u, d2 na me bestfriend...'
+		    message: 'w3r na u, d2 na me b3stfr13nd...'
 		});
 	    break;
 	    case 'tubmirules':
 		bot.sendMessage({
 		    to: channelID,
-		    message: '"Do not tubmilas others if you won't want others to tubmilas you."'
-		    message: '  '
+		    message: '"Do not tubmilas others if you don't want others to tubmilas you."\n'
 		    message: '-Chad Y.'
 		});
 	    break;
