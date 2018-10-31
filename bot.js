@@ -28,7 +28,7 @@ bot.on('message', function(user, userID, channelID, message, evt) {
 	    case 'help':
 		bot.sendMessage({
 		    to: channelID,
-		    message: 'help\r\n buang\r\n amaw\r\n ump\r\n dukanako\r\n sleep\r\n g or game\r\n emojilist\r\n hahay\r\n wru\r\n tobmirules'
+		    message: ' Type % before the command\r\n help\r\n buang\r\n amaw\r\n ump\r\n dukanako\r\n sleep\r\n g or game\r\n emojilist\r\n hahay\r\n wru\r\n tobmirules\r\n kate\r\n chady\r\n'
 		});
 	    break;
             case 'buang':
@@ -95,6 +95,18 @@ bot.on('message', function(user, userID, channelID, message, evt) {
 		bot.sendMessage({
 		    to: channelID,
 		    message: '"Do not tobmilas others if you don\'t want others to tobmilas you."\r\n -Chad Y.'
+		});
+	    break;
+	    case 'kate':
+		bot.sendMessage({
+		    to: channelID,
+		    message: 'WOW > Ster \:poop:'
+		});
+	    break;
+	    case 'chady':
+		bot.sendMessage({
+		    to: channelID,
+		    message: 'reasons.co.qa/hahay.html'
 		});
 	    break;
 	    default:
